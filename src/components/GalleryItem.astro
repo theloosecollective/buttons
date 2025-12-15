@@ -9,7 +9,7 @@ const { src, alt, caption } = Astro.props;
 ---
 
 <figure class="flex flex-col">
-  <div class="aspect-square overflow-hidden rounded-sm bg-cream-dark">
+  <div class="aspect-square overflow-hidden rounded-sm bg-brown/10">
     <img
       src={src}
       alt={alt}
@@ -17,7 +17,7 @@ const { src, alt, caption } = Astro.props;
       loading="lazy"
     />
   </div>
-  <figcaption class="mt-2 text-sm text-dark/70 italic text-center">
+  <figcaption class="font-body mt-2 text-sm text-brown italic text-center">
     {caption}
   </figcaption>
 </figure>
