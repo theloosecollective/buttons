@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'HWT Artz';
+  src: url('/fonts/HWT-ARTZ.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-cream: #f5f0e6;
   --color-cream-dark: #ebe5d9;
@@ -7,4 +15,5 @@
   --color-red-dark: #8e0000;
   --color-dark: #1a1a1a;
   --color-dark-lighter: #2d2d2d;
+  --font-display: 'HWT Artz', serif;
 }
