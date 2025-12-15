@@ -13,10 +13,29 @@ const { title = "Loose Collective Button Supply" } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Free buttons for volunteer organizations in New York City" />
+
+		<!-- Favicons -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+		<!-- Primary Meta Tags -->
 		<title>{title}</title>
+		<meta name="description" content="Free buttons for volunteer organizations in New York City" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content="Free buttons for volunteer organizations in New York City" />
+		<meta property="og:image" content="https://buttons.loosecollective.dev/og-image.png" />
+		<meta property="og:url" content="https://buttons.loosecollective.dev" />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content="Free buttons for volunteer organizations in New York City" />
+		<meta name="twitter:image" content="https://buttons.loosecollective.dev/og-image.png" />
 	</head>
 	<body class="bg-cream min-h-screen flex flex-col">
 		<slot />
