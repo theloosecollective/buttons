@@ -1,6 +1,9 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
 interface Props {
-  src: string;
+  src: ImageMetadata;
   alt: string;
   caption: string;
 }
@@ -10,11 +13,13 @@ const { src, alt, caption } = Astro.props;
 
 <figure class="flex flex-col">
   <div class="aspect-square overflow-hidden rounded-sm bg-brown/10">
-    <img
+    <Image
       src={src}
       alt={alt}
       class="w-full h-full object-cover"
       loading="lazy"
+      widths={[400, 800]}
+      sizes="(max-width: 768px) 50vw, 33vw"
     />
   </div>
   <figcaption class="font-body mt-2 text-sm text-brown italic text-center">
