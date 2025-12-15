@@ -1,0 +1,55 @@
+---
+import GalleryItem from './GalleryItem.astro';
+
+const galleryItems = [
+  {
+    src: 'https://placehold.co/400x400/d4c8b8/1a1a1a?text=Photo+1',
+    alt: 'Colorful volunteer buttons on wooden surface',
+    caption: 'Mutual Aid NYC - Fall 2024 Campaign',
+  },
+  {
+    src: 'https://placehold.co/400x400/d4c8b8/1a1a1a?text=Photo+2',
+    alt: 'Yellow and green campaign buttons',
+    caption: 'Bedford-Stuyvesant Volunteers',
+  },
+  {
+    src: 'https://placehold.co/400x400/d4c8b8/1a1a1a?text=Photo+3',
+    alt: 'Red activist buttons close-up',
+    caption: 'Brooklyn Mutual Aid Network',
+  },
+  {
+    src: 'https://placehold.co/400x400/d4c8b8/1a1a1a?text=Photo+4',
+    alt: 'Pile of assorted buttons',
+    caption: 'East Village Community Center',
+  },
+  {
+    src: 'https://placehold.co/400x400/d4c8b8/1a1a1a?text=Photo+5',
+    alt: 'Blue volunteer organization buttons',
+    caption: 'Bed-Stuy Strong Coalition',
+  },
+  {
+    src: 'https://placehold.co/400x400/d4c8b8/1a1a1a?text=Photo+6',
+    alt: 'Green environmental campaign buttons',
+    caption: 'LES Ecology Center',
+  },
+];
+---
+
+<section class="bg-cream px-4 py-8 md:py-12">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-red text-2xl md:text-3xl font-bold tracking-wide mb-6 text-center">
+      GALLERY
+    </h2>
+
+    <!-- Mobile: 2 columns, Desktop: 3 columns -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+      {galleryItems.map((item) => (
+        <GalleryItem
+          src={item.src}
+          alt={item.alt}
+          caption={item.caption}
+        />
+      ))}
+    </div>
+  </div>
+</section>

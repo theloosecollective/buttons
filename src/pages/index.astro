@@ -1,11 +1,43 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/Header.astro';
+import ContentSection from '../components/ContentSection.astro';
+import Gallery from '../components/Gallery.astro';
+import FAQ from '../components/FAQ.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<Header />
+
+	<!-- Two-column layout on desktop for How It Works + Why Buttons -->
+	<div class="bg-cream px-4 py-8 md:py-12">
+		<div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12">
+			<div>
+				<h2 class="text-red text-2xl md:text-3xl font-bold tracking-wide mb-4 text-center md:text-left">
+					HOW IT WORKS
+				</h2>
+				<p class="text-dark/90 leading-relaxed text-center md:text-left">
+					You're a volunteer organization doing rad work in your community. I'm a guy with a
+					button machine. Email me with your story, a graphic, and an amount. If you live in
+					NYC I'll deliver them myself.
+				</p>
+			</div>
+			<div>
+				<h2 class="text-red text-2xl md:text-3xl font-bold tracking-wide mb-4 text-center md:text-left">
+					WHY BUTTONS?
+				</h2>
+				<p class="text-dark/90 leading-relaxed text-center md:text-left">
+					Buttons advertise causes. They invite conversation. They delight. They're fun
+					and cute and spark joy. Everybody loves buttons!
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<Gallery />
+	<FAQ />
+
+	<div class="flex-grow"></div>
+	<Footer />
 </Layout>
