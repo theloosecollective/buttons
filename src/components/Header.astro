@@ -1,20 +1,22 @@
 ---
-
+import buttonSvg from "../assets/button.svg";
 ---
 
 <header class="bg-cream pt-8 pb-6 px-4 text-center">
 	<!-- Main Title -->
-	<h1
-		class="font-display text-4xl md:text-5xl font-bold tracking-tight text-red mb-2"
-	>
+	<h1 class="font-display text-4xl md:text-5xl text-red mb-0">
 		LOOSE COLLECTIVE
 	</h1>
 
 	<!-- Button Supply Badge -->
-	<div
-		class="font-display text-brown text-sm md:text-base font-bold tracking-widest my-3"
-	>
-		★ BUTTON SUPPLY ★
+	<div class="mt-1 mb-3 flex justify-center">
+		<div
+			class="font-display text-brown text-2xl md:text-3xl font-bold flex items-baseline gap-2"
+		>
+			<img src={buttonSvg.src} alt="" class="w-4 h-4" />
+			BUTTON SUPPLY
+			<img src={buttonSvg.src} alt="" class="w-4 h-4" />
+		</div>
 	</div>
 
 	<!-- Tagline -->
