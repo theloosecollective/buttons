@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 @import "tailwindcss";
 
 @font-face {
@@ -9,11 +10,10 @@
 }
 
 @theme {
-  --color-cream: #f5f0e6;
-  --color-cream-dark: #ebe5d9;
-  --color-red: #c62828;
-  --color-red-dark: #8e0000;
+  --color-cream: #FFF5E5;
+  --color-red: #DD1111;
+  --color-brown: #432900;
   --color-dark: #1a1a1a;
-  --color-dark-lighter: #2d2d2d;
   --font-display: 'HWT Artz', serif;
+  --font-body: 'EB Garamond', serif;
 }
