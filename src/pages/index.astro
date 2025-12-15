@@ -1,10 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import ContentSection from '../components/ContentSection.astro';
-import Gallery from '../components/Gallery.astro';
-import FAQ from '../components/FAQ.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import ContentSection from "../components/ContentSection.astro";
+import Gallery from "../components/Gallery.astro";
+import FAQ from "../components/FAQ.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
@@ -13,31 +13,23 @@ import Footer from '../components/Footer.astro';
 	<!-- Two-column layout on desktop for How It Works + Why Buttons -->
 	<div class="bg-cream px-4 pt-4 pb-8 md:pt-6 md:pb-12">
 		<div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12">
-			<div>
-				<h2 class="font-display text-red text-2xl md:text-3xl font-bold tracking-wide mb-4 text-center">
-					HOW IT WORKS
-				</h2>
-				<p class="font-body text-brown leading-relaxed text-center">
-					You're a volunteer organization doing rad work in your community. I'm a guy with a
-					button machine. Email me with your story, a graphic, and an amount. If you live in
-					NYC I'll deliver them myself.
-				</p>
-			</div>
-			<div>
-				<h2 class="font-display text-red text-2xl md:text-3xl font-bold tracking-wide mb-4 text-center">
-					WHY BUTTONS?
-				</h2>
-				<p class="font-body text-brown leading-relaxed text-center">
-					Buttons advertise causes. They invite conversation. They delight. They're fun
-					and cute and spark joy. Everybody loves buttons!
-				</p>
-			</div>
+			<ContentSection title="HOW IT WORKS">
+				You're a volunteer organization doing rad work in your
+				community. I'm a guy with a button machine. Email me with your
+				story, a graphic, and an amount. If you live in NYC I'll deliver
+				them myself.
+			</ContentSection>
+			<ContentSection title="WHY BUTTONS?">
+				Buttons advertise causes. They invite conversation. They
+				delight. They're fun and cute and spark joy. Everybody loves
+				buttons!
+			</ContentSection>
 		</div>
 	</div>
 
 	<Gallery />
 	<FAQ />
 
-	<div class="flex-grow"></div>
+	<div class="grow"></div>
 	<Footer />
 </Layout>
