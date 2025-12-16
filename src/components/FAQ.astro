@@ -1,21 +1,35 @@
 ---
-import FAQItem from './FAQItem.astro';
+import FAQItem from "./FAQItem.astro";
 ---
 
 <section class="bg-cream px-4 pt-4 pb-8 md:pt-6 md:pb-12">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="font-display text-red text-2xl md:text-3xl mb-8 text-center">
-      FAQ
-    </h2>
+	<div class="max-w-4xl mx-auto">
+		<h2 class="font-display text-red text-2xl md:text-3xl mb-8 text-center">
+			FAQ
+		</h2>
 
-    <div class="grid md:grid-cols-2 gap-x-12 gap-y-2">
-      <FAQItem question="HOW BIG ARE THE BUTTONS?">
-        <p>1.25 inches. About the size of a quarter.</p>
-      </FAQItem>
+		<div class="grid md:grid-cols-2 gap-x-12 gap-y-2">
+			<FAQItem question="HOW BIG ARE THE BUTTONS?">
+				<p>1.25 inches. About the size of a half dollar.</p>
+			</FAQItem>
 
-      <FAQItem question="HOW LONG DOES IT TAKE?">
-        <p>Depends on the size of the order. Typically within 7 days.</p>
-      </FAQItem>
-    </div>
-  </div>
+			<FAQItem question="HOW LONG DOES IT TAKE?">
+				<p>
+					Typically 7-14 days. We can figure out a timeline when we
+					chat.
+				</p>
+			</FAQItem>
+
+			<FAQItem question="WHAT IF I'M NOT IN NYC?">
+				<p>Probably not, but reach out anyway. You never know.</p>
+			</FAQItem>
+
+			<FAQItem question="HOW MANY CAN I ORDER?">
+				<p>
+					Usually 50 or less. We'll figure out what works. If you need
+					a huge order we can maybe accommodate that
+				</p>
+			</FAQItem>
+		</div>
+	</div>
 </section>
