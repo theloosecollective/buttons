@@ -1,6 +1,6 @@
 {
-  "src": "./blank-st.jpeg",
-  "alt": "Blank Street Union campaign buttons",
-  "caption": "Blank St. Coffee Union (<a href=\"https://instagram.com/blankstunion\" target=\"_blank\" class=\"underline text-red\">@blankstunion</a>) is a cool union for a coffee shop in my area.",
-  "order": 3
+	"src": "./blank-street-union.webp",
+	"alt": "Blank Street Union campaign buttons",
+	"caption": "Blank St. Coffee Union (<a href=\"https://instagram.com/blankstunion\" target=\"_blank\" class=\"underline text-red\">@blankstunion</a>) is a cool union for a coffee shop in my area.",
+	"order": 3
 }
