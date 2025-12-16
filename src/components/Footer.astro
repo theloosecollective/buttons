@@ -11,14 +11,16 @@ import SocialLink from "./SocialLink.astro";
 				<div class="font-body">North Brooklyn Creatives</div>
 				<a
 					href="mailto:buttons@loosecollective.dev"
-					class="font-body hover:underline"
-					>buttons@loosecollective.dev</a
+					class="font-body underline">buttons@loosecollective.dev</a
 				>
 			</div>
 
 			<!-- Social Links -->
 			<div class="flex items-center gap-2">
-				<SocialLink platform="instagram" handle="theloosecollective.nyc" />
+				<SocialLink
+					platform="instagram"
+					handle="theloosecollective.nyc"
+				/>
 				<SocialLink platform="bluesky" handle="loosecollective.dev" />
 				<SocialLink platform="github" handle="theloosecollective" />
 			</div>
@@ -26,7 +28,7 @@ import SocialLink from "./SocialLink.astro";
 
 		<!-- Donate Button -->
 		<button
-			onclick="alert('Thanks! We are working on it.')"
+			onclick="alert(`Thank you so much! We're considering taking donations but for now we're self-funded`)"
 			class="font-display bg-cream text-red text-sm px-4 py-1.5 rounded hover:bg-cream/90 transition-colors cursor-pointer"
 		>
 			DONATE

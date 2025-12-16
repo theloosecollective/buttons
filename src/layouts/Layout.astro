@@ -20,21 +20,28 @@ const { title = "Loose Collective Button Supply" } = Astro.props;
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
+		<!-- iOS Safari -->
+		<meta name="theme-color" content="#FFF5E5" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="apple-mobile-web-app-title" content="Loose Collective" />
+
 		<!-- Primary Meta Tags -->
 		<title>{title}</title>
-		<meta name="description" content="Free buttons for volunteer organizations in New York City" />
+		<meta name="description" content="Free buttons for movements and causes in New York City" />
 
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Loose Collective" />
 		<meta property="og:title" content={title} />
-		<meta property="og:description" content="Free buttons for volunteer organizations in New York City" />
+		<meta property="og:description" content="Free buttons for movements and causes in New York City" />
 		<meta property="og:image" content="https://buttons.loosecollective.dev/og-image.png" />
 		<meta property="og:url" content="https://buttons.loosecollective.dev" />
 
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
-		<meta name="twitter:description" content="Free buttons for volunteer organizations in New York City" />
+		<meta name="twitter:description" content="Free buttons for movements and causes in New York City" />
 		<meta name="twitter:image" content="https://buttons.loosecollective.dev/og-image.png" />
 	</head>
 	<body class="bg-cream min-h-screen flex flex-col">
