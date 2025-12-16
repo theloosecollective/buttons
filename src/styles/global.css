@@ -1,11 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 @import "tailwindcss";
 
 @font-face {
   font-family: 'HWT Artz';
-  src: url('/fonts/HWT-ARTZ.ttf') format('truetype');
+  src: url('/fonts/HWT-ARTZ.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/fonts/EBGaramond-VariableFont_wght.woff2') format('woff2');
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/fonts/EBGaramond-Italic-VariableFont_wght.woff2') format('woff2');
+  font-weight: 400 800;
+  font-style: italic;
   font-display: swap;
 }
 
